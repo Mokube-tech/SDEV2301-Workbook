@@ -26,12 +26,17 @@ int userAnswer = int.Parse(Console.ReadLine() ?? "");
 
 // print correct or display the correct answer
 
-if (userAnswer == correctAnswer)
-{
-    Console.WriteLine("correct");
+// if (userAnswer == correctAnswer)
+// { Console.WriteLine("correct"); }
+// else{ Console.WriteLine($"{userAnswer} is incorrect, correct answer is {correctAnswer}");}
 
-}
-else
+while (answer != correctAnswer)
+
 {
-    Console.WriteLine($"{userAnswer} is incorrect, correct answer is {correctAnswer}");
+    Console.WriteLine($"incorrect");
+    Console.Write($"what is {a} - {b} = ?"); // asking the user to reenter there input again 
+
+    userAnswer = int.Parse(Console.ReadLine() ?? "")
 }
+
+Console.WriteLine("correct");
