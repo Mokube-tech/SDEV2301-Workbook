@@ -1,4 +1,4 @@
-string name = "Bruce"
+string name = "Bruce";
 int score = 92;
 Console.WriteLine($"{name}'s score is {score}.");
 
